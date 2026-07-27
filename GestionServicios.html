@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Módulos - Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Rigoberto</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#inicio">INICIO</a></li>
+                    <li><a href="index.html#sobremi">SOBRE MI</a></li>
+                    <li><a href="index.html#skills">HABILIDADES</a></li>
+                    <li><a href="index.html#curriculum">CURRICULUM</a></li>
+                    <li><a href="index.html#portfolio">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION MODULOS -->
+    <section id="modulos" class="modulos">
+        <div class="contenido-seccion">
+            <h2>Sistema de Gestión de Mantenimiento para Estufas Industriales</h2>
+
+            <p class="modulos-descripcion">
+                Desarrollé un sistema de escritorio para la gestión de clientes, técnicos, usuarios y servicios de mantenimiento de estufas industriales. El sistema permite administrar la información mediante operaciones CRUD, centralizando los datos en una base de datos MySQL y facilitando el seguimiento de los servicios realizados.
+            </p>
+
+            <div class="modulo invertido">
+                <div class="modulo-img chica">
+                    <img src="img/Modulo Gestion.png" alt="Menú Principal">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Menú Principal</h3>
+                    <p>Panel principal del sistema que permite acceder a los módulos de Clientes, Servicios, Usuarios y Técnicos, además de la opción para salir de la aplicación.</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="modulo-img chica">
+                    <img src="img/Moduloclientes.png" alt="Módulo de Clientes">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Clientes</h3>
+                    <p>Permite registrar, modificar, eliminar, listar y buscar clientes, manteniendo organizada toda la información de las personas o empresas atendidas.</p>
+                </div>
+            </div>
+
+            <div class="modulo invertido">
+                <div class="modulo-img chica">
+                    <img src="img/Moduloservicios.png" alt="Módulo de Servicios">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Servicios</h3>
+                    <p>Administra los servicios de mantenimiento y reparación mediante funciones para registrar, modificar, eliminar y consultar los servicios realizados.</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="modulo-img chica">
+                    <img src="img/Modulousuarios.png" alt="Módulo de Usuarios">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Usuarios</h3>
+                    <p>Gestiona los usuarios del sistema, permitiendo buscar, editar, eliminar y visualizar la información de las cuentas registradas.</p>
+                </div>
+            </div>
+
+            <div class="modulo invertido">
+                <div class="modulo-img chica">
+                    <img src="img/Modulotecnicos.png" alt="Módulo de Técnicos">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Técnicos</h3>
+                    <p>Permite registrar, modificar y listar los técnicos responsables de realizar los mantenimientos y reparaciones.</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="modulo-img">
+                    <img src="img/ModuloserviciosListado.png" alt="Listado de Servicios">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Listado de Servicios</h3>
+                    <p>Visualiza el historial de servicios registrados mostrando información como cliente, tipo de servicio, costo, fecha y técnico responsable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="GestionServicios.html" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1EPQ8SCLeG/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_rigo_rr?igsh=NnhmYm1pZDJuajNh"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
