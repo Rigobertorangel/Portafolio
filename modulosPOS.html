@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Módulos - Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="/index.html">Rigoberto</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#inicio">INICIO</a></li>
+                    <li><a href="index.html#sobremi">SOBRE MI</a></li>
+                    <li><a href="index.html#skills">HABILIDADES</a></li>
+                    <li><a href="index.html#curriculum">CURRICULUM</a></li>
+                    <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION MODULOS -->
+    <section id="modulos" class="modulos">
+        <div class="contenido-seccion">
+            <h2>Módulos Desarrollados Del Sistema POS(Punto de Venta)</h2>
+
+            <p class="modulos-descripcion">
+                Aplicación de escritorio desarrollada en C#, Forms y MySQL, diseñada para optimizar la administración de una empresa mediante módulos especializados para la gestión de usuarios, clientes, inventario y facturación. El sistema implementa autenticación por roles, operaciones CRUD e integración con una base de datos relacional para garantizar la organización y seguridad de la información.
+            </p>
+            <div class="modulo invertido">
+                <div class="modulo-img">
+                    <img src="img/FmLogin.png" alt="Módulo de Inventario">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Inicio de sesión</h3>
+                    <p>El sistema cuenta con un módulo de autenticación que valida las credenciales del usuario antes de permitir el acceso a la aplicación. Dependiendo del rol asignado en la base de datos, el sistema redirige automáticamente al panel correspondiente.</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="modulo-img">
+                    <img src="img/FmGestionUsuarios.png" alt="Módulo de Facturación">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Usuarios</h3>
+                    <p>Permite administrar las cuentas de acceso al sistema, facilitando el registro y control de los usuarios que utilizarán la aplicación.</p>
+                </div>
+            </div>
+
+            <div class="modulo invertido">
+                <div class="modulo-img">
+                    <img src="img/FmGestion de clientes.png" alt="Módulo de Inventario">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Clientes</h3>
+                    <p>Módulo encargado de almacenar y administrar la información de los clientes, facilitando su consulta durante el proceso de facturación.</p>
+                </div>
+            </div>
+
+            <div class="modulo">
+                <div class="modulo-img">
+                    <img src="img/FmGestionInventarioProveedores.png" alt="Módulo de Usuarios">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Gestion de inventario(Proveedores)</h3>
+                    <p>Permite administrar la información de los proveedores encargados del suministro de productos para la empresa.</p>
+                </div>
+            </div>
+
+            <div class="modulo invertido">
+                <div class="modulo-img">
+                    <img src="img/FmGestionInventarioProductos.png" alt="Módulo de Reportes">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Gestion de inventario(Productos)</h3>
+                    <p>Controla el catálogo de productos disponibles en el inventario, permitiendo mantener actualizada la información comercial de cada artículo.</p>
+                </div>
+            </div>
+
+
+            <div class="modulo">
+                <div class="modulo-img">
+                    <img src="img/FmGestiondeFacturas.png" alt="Módulo de Reportes">
+                </div>
+                <div class="modulo-texto">
+                    <h3>Módulo de Facturación</h3>
+                    <p>Este módulo permite realizar el proceso completo de facturación de ventas, calculando automáticamente los valores correspondientes, generando el detalle de la compra y las facturas en pdf.</p>
+                </div>
+            </div>
+
+            <!-- Para agregar otro módulo, copia y pega uno de estos bloques
+                 y cambia la imagen y el texto. Alterna la clase "invertido"
+                 para que la imagen cambie de lado. -->
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
