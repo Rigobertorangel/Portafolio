@@ -12,108 +12,183 @@
 <body>
 
     <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="/Portafolio/index.html">Rigoberto</a>
+    <!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="index.html">Rigoberto</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html#inicio">INICIO</a></li>
+                <li><a href="index.html#sobremi">SOBRE MI</a></li>
+                <li><a href="index.html#skills">HABILIDADES</a></li>
+                <li><a href="index.html#curriculum">CURRICULUM</a></li>
+                <li><a href="index.html#portfolio">PORTAFOLIO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
+<!-- SECCION MODULOS -->
+<section id="modulos" class="modulos">
+    <div class="contenido-seccion">
+        <h2>Sistema de Gestión de Mantenimiento para Estufas Industriales</h2>
+
+        <p class="modulos-descripcion">
+            Desarrollé un sistema de escritorio en consola utilizando <strong>Java</strong> para la gestión de clientes, técnicos, usuarios y servicios de mantenimiento de estufas industriales. La aplicación implementa operaciones <strong>CRUD (Crear, Leer, Actualizar y Eliminar)</strong> y utiliza <strong>MySQL</strong> como sistema de gestión de bases de datos para almacenar y administrar la información de forma centralizada. El proyecto fue desarrollado aplicando Programación Orientada a Objetos (POO), separación por capas y conexión a bases de datos mediante JDBC, permitiendo automatizar el registro, consulta y seguimiento de los servicios realizados.
+        </p>
+
+        <!-- MENÚ PRINCIPAL -->
+        <div class="modulo invertido">
+            <div class="modulo-img chica">
+                <img src="img/Modulo Gestion.png" alt="Menú Principal">
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html#inicio">INICIO</a></li>
-                    <li><a href="index.html#sobremi">SOBRE MI</a></li>
-                    <li><a href="index.html#skills">HABILIDADES</a></li>
-                    <li><a href="index.html#curriculum">CURRICULUM</a></li>
-                    <li><a href="index.html#portfolio">PORTAFOLIO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
-    <!-- SECCION MODULOS -->
-    <section id="modulos" class="modulos">
-        <div class="contenido-seccion">
-            <h2>Sistema de Gestión de Mantenimiento para Estufas Industriales</h2>
-
-            <p class="modulos-descripcion">
-                Desarrollé un sistema de escritorio en consola utilizando Java para la gestión de clientes, técnicos, usuarios y servicios de mantenimiento de estufas industriales. La aplicación implementa operaciones CRUD (Crear, Leer, Actualizar y Eliminar) y utiliza MySQL como sistema de gestión de bases de datos para almacenar y administrar la información de forma centralizada, facilitando el registro, consulta y seguimiento de los servicios de mantenimiento.
-            </p>
-
-            <div class="modulo invertido">
-                <div class="modulo-img chica">
-                    <img src="img/Modulo Gestion.png" alt="Menú Principal">
-                </div>
-                <div class="modulo-texto">
-                    <h3>Menú Principal</h3>
-                    <p>Panel principal del sistema que permite acceder a los módulos de Clientes, Servicios, Usuarios y Técnicos, además de la opción para salir de la aplicación.</p>
-                </div>
-            </div>
-
-            <div class="modulo">
-                <div class="modulo-img chica">
-                    <img src="img/Moduloclientes.png" alt="Módulo de Clientes">
-                </div>
-                <div class="modulo-texto">
-                    <h3>Módulo de Clientes</h3>
-                    <p>Permite registrar, modificar, eliminar, listar y buscar clientes, manteniendo organizada toda la información de las personas o empresas atendidas.</p>
-                </div>
-            </div>
-
-            <div class="modulo invertido">
-                <div class="modulo-img chica">
-                    <img src="img/Moduloservicios.png" alt="Módulo de Servicios">
-                </div>
-                <div class="modulo-texto">
-                    <h3>Módulo de Servicios</h3>
-                    <p>Administra los servicios de mantenimiento y reparación mediante funciones para registrar, modificar, eliminar y consultar los servicios realizados.</p>
-                </div>
-            </div>
-
-            <div class="modulo">
-                <div class="modulo-img chica">
-                    <img src="img/Modulousuarios.png" alt="Módulo de Usuarios">
-                </div>
-                <div class="modulo-texto">
-                    <h3>Módulo de Usuarios</h3>
-                    <p>Gestiona los usuarios del sistema, permitiendo buscar, editar, eliminar y visualizar la información de las cuentas registradas.</p>
-                </div>
-            </div>
-
-            <div class="modulo invertido">
-                <div class="modulo-img chica">
-                    <img src="img/Modulotecnicos.png" alt="Módulo de Técnicos">
-                </div>
-                <div class="modulo-texto">
-                    <h3>Módulo de Técnicos</h3>
-                    <p>Permite registrar, modificar y listar los técnicos responsables de realizar los mantenimientos y reparaciones.</p>
-                </div>
-            </div>
-
-            <div class="modulo">
-                <div class="modulo-img">
-                    <img src="img/ModuloserviciosListado.png" alt="Listado de Servicios">
-                </div>
-                <div class="modulo-texto">
-                    <h3>Listado de Servicios</h3>
-                    <p>Visualiza el historial de servicios registrados mostrando información como cliente, tipo de servicio, costo, fecha y técnico responsable.</p>
-                </div>
+            <div class="modulo-texto">
+                <h3>Menú Principal</h3>
+                <p>
+                    Panel principal del sistema que centraliza el acceso a los módulos de Clientes, Servicios, Usuarios y Técnicos, además de permitir salir de la aplicación.
+                    <br><br>
+                    <strong>Resultado:</strong> Se logró una navegación organizada e intuitiva que facilita el acceso a todas las funcionalidades del sistema, reduciendo el tiempo de operación y mejorando la experiencia del usuario.
+                </p>
             </div>
         </div>
-    </section>
 
-    <!-- footer -->
-    <footer>
-        <a href="GestionServicios.html" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-            <div class="redes">
-                <a href="https://www.facebook.com/share/1EPQ8SCLeG/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/_rigo_rr?igsh=NnhmYm1pZDJuajNh"><i class="fa-brands fa-instagram"></i></a>
+        <!-- CLIENTES -->
+        <div class="modulo">
+            <div class="modulo-img chica">
+                <img src="img/Moduloclientes.png" alt="Módulo de Clientes">
             </div>
-    </footer>
+            <div class="modulo-texto">
+                <h3>Módulo de Clientes</h3>
+                <p>
+                    Permite registrar, modificar, eliminar, listar y buscar clientes mediante operaciones CRUD. Además administra información personal, direcciones y tipo de cliente (empresa o particular).
+                    <br><br>
+                    <strong>Resultado:</strong> Se centralizó toda la información de los clientes, facilitando su consulta y actualización, reduciendo errores en el registro y agilizando la búsqueda de datos mediante diferentes criterios.
+                </p>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- SERVICIOS -->
+        <div class="modulo invertido">
+            <div class="modulo-img chica">
+                <img src="img/Moduloservicios.png" alt="Módulo de Servicios">
+            </div>
+            <div class="modulo-texto">
+                <h3>Módulo de Servicios</h3>
+                <p>
+                    Administra los servicios de mantenimiento y reparación permitiendo registrar, modificar, eliminar y consultar la información de cada servicio realizado, incluyendo costo, fecha y tipo de mantenimiento.
+                    <br><br>
+                    <strong>Resultado:</strong> Se obtuvo un historial organizado de los mantenimientos realizados, permitiendo controlar costos, fechas y tipos de servicio, mejorando el seguimiento de cada intervención técnica.
+                </p>
+            </div>
+        </div>
+
+        <!-- USUARIOS -->
+        <div class="modulo">
+            <div class="modulo-img chica">
+                <img src="img/Modulousuarios.png" alt="Módulo de Usuarios">
+            </div>
+            <div class="modulo-texto">
+                <h3>Módulo de Usuarios</h3>
+                <p>
+                    Gestiona las cuentas del sistema permitiendo registrar, consultar, editar, eliminar y visualizar usuarios, además de controlar el estado de acceso de cada uno.
+                    <br><br>
+                    <strong>Resultado:</strong> Se implementó un control de acceso seguro que facilita la administración de usuarios autorizados, permitiendo mantener actualizadas las credenciales y restringir el acceso cuando sea necesario.
+                </p>
+            </div>
+        </div>
+
+        <!-- TECNICOS -->
+        <div class="modulo invertido">
+            <div class="modulo-img chica">
+                <img src="img/Modulotecnicos.png" alt="Módulo de Técnicos">
+            </div>
+            <div class="modulo-texto">
+                <h3>Módulo de Técnicos</h3>
+                <p>
+                    Permite registrar, modificar y consultar la información de los técnicos responsables de realizar los mantenimientos y reparaciones de estufas industriales.
+                    <br><br>
+                    <strong>Resultado:</strong> Se organizó la información del personal técnico, facilitando su administración y permitiendo identificar rápidamente a los responsables de cada servicio realizado.
+                </p>
+            </div>
+        </div>
+
+        <!-- LISTADO -->
+        <div class="modulo">
+            <div class="modulo-img">
+                <img src="img/ModuloserviciosListado.png" alt="Listado de Servicios">
+            </div>
+            <div class="modulo-texto">
+                <h3>Listado de Servicios</h3>
+                <p>
+                    Muestra el historial completo de los servicios registrados, incluyendo cliente, técnico responsable, tipo de servicio, fecha y costo de cada mantenimiento realizado.
+                    <br><br>
+                    <strong>Resultado:</strong> Se facilitó la consulta del historial de mantenimientos, permitiendo realizar un seguimiento eficiente de los servicios ejecutados y mejorar el control de la información almacenada en la base de datos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- SECCION RESULTADOS GENERALES -->
+<section id="resultados" class="modulos">
+    <div class="contenido-seccion">
+        <h2>Resultados Generales del Proyecto</h2>
+
+        <div class="modulo">
+            <div class="modulo-texto">
+                <h3>Resultados Obtenidos</h3>
+
+                <p>
+                    El desarrollo del sistema permitió automatizar la gestión de clientes, técnicos, usuarios y servicios de mantenimiento de estufas industriales mediante una aplicación de consola desarrollada en <strong>Java</strong>. Gracias a la implementación de una arquitectura modular y el uso de una base de datos relacional, se logró una solución organizada, escalable y de fácil mantenimiento.
+                </p>
+
+                <ul class="lista-resultados">
+                    <li>✔ Se implementó una base de datos relacional en <strong>MySQL</strong>, administrada mediante <strong>WampServer</strong>, garantizando el almacenamiento seguro y persistente de la información.</li>
+
+                    <li>✔ Se estableció la conexión entre Java y MySQL utilizando <strong>JDBC</strong>, permitiendo realizar operaciones de consulta y actualización de datos de manera eficiente.</li>
+
+                    <li>✔ Se desarrollaron operaciones <strong>CRUD (Crear, Leer, Actualizar y Eliminar)</strong> para los módulos de Clientes, Técnicos, Usuarios y Servicios.</li>
+
+                    <li>✔ Se aplicó el paradigma de <strong>Programación Orientada a Objetos (POO)</strong>, utilizando clases, encapsulamiento y separación por capas para mejorar la organización del código.</li>
+
+                    <li>✔ Se implementó un sistema de autenticación mediante usuario y contraseña para controlar el acceso a la aplicación.</li>
+
+                    <li>✔ Se incorporaron validaciones de entrada para evitar errores durante el registro de información y mejorar la estabilidad del sistema.</li>
+
+                    <li>✔ Se optimizó la administración de los servicios de mantenimiento mediante la consulta, modificación y seguimiento del historial de servicios realizados.</li>
+
+                    <li>✔ Se redujo el tiempo de búsqueda de información gracias a las funciones de consulta y filtrado implementadas en los diferentes módulos.</li>
+
+                    <li>✔ Se logró una estructura modular que facilita futuras mejoras y la incorporación de nuevas funcionalidades.</li>
+
+                    <li>✔ El proyecto permitió fortalecer conocimientos en desarrollo de aplicaciones Java, conexión con bases de datos MySQL, consultas SQL, manejo de JDBC y organización del software mediante una arquitectura por capas.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer>
+    <a href="GestionServicios.html" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <div class="redes">
+        <a href="https://www.facebook.com/share/1EPQ8SCLeG/?mibextid=wwXIfr">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/_rigo_rr?igsh=NnhmYm1pZDJuajNh">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
